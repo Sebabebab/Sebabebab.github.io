@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    
+    :root {
+  --primary-color:  #428DFF;
+  --overlay-color: rgba(27, 49, 67, 0.85);
+  --menu-speed: 0.75s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+.showcase {
+  background: var(--primary-color);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+.showcase:before {
+  content: '';
+  background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
+  position: absolute;
+  top: 13px;
+  right: 50px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+    
+}
+
+.showcase h1 {
+  font-size: 4rem;
+}
+
+.showcase p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+  
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+
+.menu-wrap {
+  top: 23px;
+  right: 50px;
+  z-index: 1;
+  float: right;
+}
+
+.menu-wrap .toggler {
+  position: fixed;
+  top: 13px;
+  right: 50px;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: fixed;
+  top: 13px;
+  right: 50px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  float: right;
+}
+
+
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+
+}
+
+
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0px;
+  left: 1050px;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.menu-wrap .menu > div {
+  background: var(--overlay-color);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: top;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+
+.boks1 {
+background-color: #BDD1F4;
+grid-area: a;
+padding-top: 5px;
+
+}
+
+
+.boks2 {
+
+background-color: white;
+grid-area: b;
+}
+  
+.boks3 {
+background-color:white;
+grid-area: c;
+text-align: center;
+}
+  
+.boks4 {
+background-color: white;
+grid-area: d;
+margin-left:40px;
+}
+  
+.boks5 {
+background-color: #BDD1F4;
+grid-area: e;
+text-align: center;
+font-family:sans-serif;
+font-size: xx-large;
+}
+
+.boks6 {
+background-color: #6381B2;
+grid-area: f;
+text-align: center;
+}
+
+.boks7 {
+background-color: #BDD1F4;
+grid-area: g;
+text-align: center;
+padding-right: 30px;
+padding-top: 25px;
+}
+.boks8 {
+background-color: #BDD1F4;
+grid-area: h;
+text-align: center;
+padding-right: 30px;
+padding-top: 20px;
+padding-left: 30px;
+}
+  
+   
+.beholder {
+
+display: grid;
+grid-template-columns: 15% 70% 15%  ;
+grid-template-rows: 85px 30px 85px 94%; 
+grid-template-areas: "a  h  g"
+                     "b  b   b"
+                     "d  e c"
+                     "d  f  c"
+                }    
+                
+    
+</style>
+
+</head>
+<body>
+
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="Index.html" style="margin-left:830px"><u>Home</u></li>
+                <li><a href="#sca"><u>Avoid Scams</u></li>
+                <li><a href="#scams" style="margin-left:850px" ><u>Been Scammed?</u></li>
+                <li><a href="Contact.html" style="margin-right:10px" ><u>Contact Us</u></li>
+                <li> <a href="https://xd.adobe.com/view/de2d1ce1-804f-40f3-ae3e-58224ec10436-8b7e/?fullscreen"><img style="margin-left:810px" src="Bilder/Adobe.png" width="75px"></a></li>
+              </ul>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+    <div class="menu-bg" id="menu-bg"></div>
+    <script src="file:///Users/sesma001/Library/CloudStorage/OneDrive-Osloskolen/Vg1/Koding/Internet%20assignment_Sebastian%20S/script.js"></script>
+    <div class="beholder">
+        <div class="boks1"><x><img src="Bilder/Oslo.png" width="150px"></a></div>  
+        <div class="boks2"></div>
+        <div class="boks3"></div>
+        <div class="boks4"> <img  style="margin-top:2630px;" src="Bilder/scamicon.png" width="60%"></div>
+        <div class="boks5"> <img src="Bilder/Text.png" width="40%" style="margin-top:25px"></div>
+        <div class="boks6"><video style="margin-top:55px;" controls src="Video.mp4" width="78%"></video><img id="sca" style="margin-top:55px;" src="Bilder/StorTekst.png" width="80%">
+         <img style="margin-top:80px;" src="Bilder/Gråter.png" width="80%"> <img id="scams" style="margin-top:80px;" src="Bilder/Scammed.png" width="80%">
+          <a  href="Contact.html"><img style="margin-top:15px;" src="Bilder/Help.png" width="220px"></a></div>
+        <div class="boks7"></div>
+        <div class="boks8"><a href="About.html"><img style="float: left;" src="Bilder/Asset 2.png" width="14%" height="70%"></a><a href="Contact.html"> <img style="float: right;" src="Bilder/Contact.png" width="17%" height="70%">
+     <div class="ingredienser">
+
+
+      
+      
+    </div>
+
+
+</div></body></html> 

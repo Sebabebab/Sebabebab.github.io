@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+
+    <style>
+        #Shop-Now {
+            background-image: url(Bilder/ShopNow.png);
+            height: 50px;
+            width: 160px;
+            transition: background-image 0.3s ease;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 0%;
+        }
+
+        #Shop-Now:hover {
+            background-image: url(Bilder/ShopNowHover.png);
+        }
+
+        h2 {
+            font-family: Bodoni;
+        }
+
+        h3 {
+            font-family: Bodoni;
+            color: white;
+        }
+
+        li {
+            font-family: Bodoni;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.4;
+        }
+
+        .boks1 {
+            background-color: #282E45;
+            grid-area: a;
+            padding-top: 5px;
+        }
+
+        .boks2 {
+            background-color: white;
+            grid-area: b;
+            text-align: center;
+            background-size: contain;
+            background-image: image-set(center);
+            background-image: url(Bilder/ModellOgLogoBriglia.png);
+            padding-top: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .boks3 {
+            background-color: #1A1D2B;
+            grid-area: c;
+            text-align: center;
+        }
+
+        .boks4 {
+            background-color: #1A1D2B;
+            grid-area: d;
+        }
+
+        .boks5 {
+            background-color: #1A1D2B;
+            grid-area: e;
+            color: #B89E63;
+            text-align: center;
+            padding-top: 50px;
+            font-family: Bodoni;
+            font-size: xx-large;
+        }
+
+        .boks7 {
+            background-color: #282E45;
+            grid-area: g;
+            text-align: center;
+            padding-right: 30px;
+            padding-top: 25px;
+        }
+
+        .boks8 {
+            position: relative;
+            z-index: 1;
+            background-color: #282E45;
+            grid-area: h;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .boks9 {
+            background-color: white;
+            grid-area: j;
+        }
+
+        .boks10 {
+            background-color: white;
+            grid-area: f;
+            padding-top: 100px;
+        }
+
+        .boks11 {
+            background-color: white;
+            grid-area: i;
+        }
+
+        .boks12 {
+            background-color: #1A1D2B;
+            grid-area: k;
+            color: #B89E63;
+            text-align: center;
+            padding-top: 50px;
+            font-family: Bodoni;
+            font-size: xx-large;
+        }
+
+        .boks13 {
+            background-color: white;
+            grid-area: l;
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        .boks14 {
+            background-color: #1A1D2B;
+            grid-area: m;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .boks15 {
+            background-color: white;
+            grid-area: n;
+            text-align: center;
+        }
+
+        .beholder {
+            display: grid;
+            grid-template-columns: auto 70% auto;
+            grid-template-rows: 100px 25.5% 146px 35% 146px 35% 146px 100px;
+            grid-template-areas:
+                "a  h  g"
+                "å  b  ø"
+                "d  e  c"
+                "i  f  j"
+                "k  k  k"
+                "æ  l  p"
+                "m  m  m"
+                "n  n  n";
+        }
+    </style>
+</head>
+
+<body>
+  <header id="header">
+    <div class="inner">
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<nav id="menu">
+    <h3>Briglia</h3>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="KjøpNå.html">Shop Now</a></li>
+        <li><a href="#latestcollection">Latest Collection</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a id="contact" href="#footer">Contact Us</a></li>
+    </ul>
+</nav>
+
+<div class="menu-bg" id="menu-bg"></div>
+
+    <div class="beholder">
+        <div class="boks1"></div>
+        <div class="boks2"><a href="KjøpNå.html"><img id="Shop-Now"></a></div>
+        <div class="boks3"></div>
+        <div class="boks4"></div>
+        <div class="boks5">Our Latest Collection</div>
+        <div class="boks6"></div>
+        <div class="boks7"></div>
+        <div class="boks8"><img id="BrigliaLogo" src="Bilder/Briglia3.png" height="52%"></div>
+        <div class="boks9"></div>
+        <div class="boks10">
+            <section class="container" id="latestcollection">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="bilde1" src="Bilder/ModellHvitSkjorte.png">
+                        <img id="bilde2" src="Bilder/ModellHvitSkjorteBak.png">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#bilde1"></a>
+                        <a href="#bilde2"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="boks11"></div>
+        <div class="boks12">New Shorts</div>
+        <div class="boks13">
+            <section class="container1">
+                <div class="slider-wrapper1">
+                    <div class="slider1">
+                        <img id="bilde3" src="Bilder/SkjortsHvitModell.png">
+                        <img id="bilde4" src="Bilder/SkjortsHvitModellBak.png">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#bilde3"></a>
+                        <a href="#bilde4"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="boks14"><a href="KjøpNå.html"><img id="Shop-Now" width="160px"></a></div>
+        <div class="boks15" id="footerid">
+            <div id="wrapper">
+                <footer id="footer">
+                    <div class="inner">
+                        <section>
+                            <h2>Get in touch</h2>
+                            <form method="post" action="#">
+                                <div class="fields">
+                                    <div class="field half">
+                                        <input type="text" name="name" id="name" placeholder="Name">
+                                    </div>
+                                    <div class="field half">
+                                        <input type="email" name="email" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="field">
+                                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send" class="primary"></li>
+                                </ul>
+                            </form>
+                        </section>
+                        <section>
+                            <h2>Follow</h2>
+                            <ul class="icons">
+                              <li><a href="https://twitter.com" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                              <li><a href="https://facebook.com" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                              <li><a href="https://instagram.com" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                              <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+                              <li><a href="https://gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                              
+                            </ul>
+                        </section>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/browser.min.js"></script>
+        <script src="js/breakpoints.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/opacity.js"></script>
+</body>
+</html>

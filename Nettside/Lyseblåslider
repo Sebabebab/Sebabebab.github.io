@@ -1,0 +1,214 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+.slider-wrapper {
+position: relative;
+max-width: 48rem;
+margin: 0 auto;
+}
+.slider {
+    display: flex;
+    aspect-ratio: 4 / 4;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slider img {
+flex: 1 0 100%;
+scroll-snap-align: end;
+object-fit:contain;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 2rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color:#8D6A34;
+    opacity: 100%;
+  transition: opacity ease 250ms;
+}
+
+
+.slider-nav a:hover{
+    opacity: 0.25;
+}
+
+ .slider-wrapper {
+position: relative;
+max-width: 48rem;
+margin: 0 auto;
+}
+.slider {
+    display: flex;
+    aspect-ratio: 4 / 4;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slider img {
+flex: 1 0 100%;
+scroll-snap-align: end;
+object-fit:contain;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 2rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color:#8D6A34;
+    opacity: 100%;
+  transition: opacity ease 250ms;
+}
+
+
+.slider-nav a:hover{
+    opacity: 0.6;
+}
+
+
+
+
+
+
+.slider-wrapper1 {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    }
+    .slider1 {
+        display: flex;
+        aspect-ratio: 4 / 4;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    }
+    
+    .slider1 img {
+    flex: 1 0 100%;
+    scroll-snap-align: end;
+    object-fit:contain;
+    }
+    
+    .slider-nav1 {
+        display: flex;
+        column-gap: 2rem;
+        position: absolute;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    
+    .slider-nav1 a {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: black;
+        opacity: 100%;
+      transition: opacity ease 250ms;
+    }
+    
+    
+    .slider-nav1 a:hover{
+        opacity: 0.25;
+    }
+    
+     .slider-wrapper1 {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    }
+    .slider1 {
+        display: flex;
+        aspect-ratio: 4 / 4;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    }
+    
+    .slider1 img {
+    flex: 1 0 100%;
+    scroll-snap-align: end;
+    object-fit:contain;
+    }
+    
+    .slider-nav1 {
+        display: flex;
+        column-gap: 2rem;
+        position: absolute;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    
+    .slider-nav1 a {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: black;
+        opacity: 100%;
+      transition: opacity ease 250ms;
+    }
+    
+    
+    .slider-nav1 a:hover{
+        opacity: 0.25;
+    }
+
+
+    </style>
+
+
+    <section class="container" id="latestcollection">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="bilde1" src="Bilder/PenSKjorteBlåLys.png">
+                <img id="bilde2" src="Bilder/PenSkjorteBlåBak.png">
+                <img id="bilde2" src="Bilder/SkjorteBlåCloseUp.png">
+            </div>
+            <div class="slider-nav">
+                <a href="#bilde1"></a>
+                <a href="#bilde2"></a>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

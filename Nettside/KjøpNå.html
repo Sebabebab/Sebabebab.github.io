@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Style.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    
+    <style>
+        h3 {
+            font-family: Bodoni;
+        }
+        li {
+            font-family: Bodoni;
+        }
+        
+        h2 {
+            font-size: 1.1em;
+            font-family: Didot;
+            color: #8D6A34;
+            padding-top: 34%;
+        }
+        
+        body {
+            margin: 0%;
+        }
+        
+        .boks1 {
+            background-color: #282E45;
+            grid-area: a;
+            text-align: center;
+            padding-top: 30px;
+            padding-right: 30px;
+        }
+        
+        .boks2 {
+            background-color: white;
+            grid-area: b;
+            text-align: center;
+            background-size: contain;
+            background-image: image-set(center);
+            background-image: url(Bilder/ModellHvitHalfzip.png);
+            padding-bottom: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .boks3 {
+            background-color: white;
+            grid-area: c;
+        }
+        
+        .boks4 {
+            background-color: white;
+            grid-area: d;
+        }
+        
+        .boks5 {
+            background-color: white;
+            grid-area: e;
+        }
+        
+        .boks6 {
+            background-color: white;
+            grid-area: f;
+        }
+        
+        .boks7 {
+            background-color: white;
+            grid-area: g;
+        }
+        
+        .boks8 {
+            background-color: white;
+            grid-area: h;
+        }
+        
+        .boks9 {
+            background-color: white;
+            grid-area: i;
+        }
+        
+        .boks10 {
+            background-color: white;
+            grid-area: j;
+        }
+        
+        .beholder {
+            display: grid;
+            height: fit-content;
+            max-height: 2780px;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 100px 26% 21.56% 21.56% 21.56% 21.56%;
+            grid-template-areas:
+                "a a a a"
+                "b b b b"
+                "c c d d"
+                "e e f f"
+                "g g h h"
+                "i i j j";
+        }
+        
+        #halfzipblå {
+            background-image: url(Bilder/HalfZipBlå.png);
+            background-position: center;
+            height: 600px;
+            width: 100%;
+            transition: background-image 0.3s ease;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 0%;
+        }
+        
+        #halfzipblå:hover {
+            background-image: url(Bilder/HalfZipBlåBak.png);
+        }
+        
+        #penskjorte {
+            background-image: url(Bilder/PenSkjorteBlå.png);
+            background-position: center;
+            height: 600px;
+            width: 100%;
+            transition: background-image 0.3s ease;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 0%;
+        }
+        
+        #penskjorte:hover {
+            background-image: url(Bilder/PenSkjorteBlåBak.png);
+        }
+        
+        #penskjortesvart {
+            background-image: url(Bilder/PenSkjorteSvart.png);
+            background-position: center;
+            height: 600px;
+            width: 100%;
+            transition: background-image 0.3s ease;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 0%;
+        }
+        
+        #penskjortesvart:hover {
+            background-image: url(Bilder/PenSkjorteSvartBak.png);
+        }
+        
+        #halfzipblåmørk {
+            background-image: url(Bilder/HalfZipBlåMørk.png);
+            background-position: center;
+            height: 600px;
+            width: 100%;
+            transition: background-image 0.3s ease;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 0%;
+        }
+        
+        #halfzipblåmørk:hover {
+            background-image: url(Bilder/HalfZipModellBak.png);
+        }
+        
+        #BlåSkjorts {
+            background-image: url(Bilder/BloSkjortsAnnen.png);
+            background-position: center;
+            height: 600px;
+            width: 100%;
+            transition: background-image 0.3s ease;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 0%;
+        }
+        
+        #BlåSkjorts:hover {
+            background-image: url(Bilder/BlåSkjortsAnnenBak.png);
+        }
+        
+        #blå {
+            background-image: url(Bilder/BlåSkjort.png);
+            background-position: center;
+            height: 600px;
+            width: 100%;
+            transition: background-image 0.3s ease;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 0%;
+        }
+        
+        #blå:hover {
+            background-image: url(Bilder/SkjortBlåBak.png);
+        }
+        
+        #beige {
+            background-image: url(Bilder/PenSKjorteBeige.png);
+            background-position: center;
+            height: 600px;
+            width: 100%;
+            transition: background-image 0.3s ease;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 0%;
+        }
+        
+        #beige:hover {
+            background-image: url(Bilder/PdnSkjorteBeigeBak.png);
+        }
+        
+        #lys {
+            background-image: url(Bilder/PenSKjorteBlåLys.png);
+            background-position: center;
+            height: 600px;
+            width: 100%;
+            transition: background-image 0.3s ease;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 0%;
+        }
+        
+        #lys:hover {
+            background-image: url(Bilder/PenSkjorteBlåLysBak.png);
+        }
+    </style>
+</head>
+
+<body>
+  
+    <header id="header">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <nav id="menu">
+        <h3>Briglia</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="KjøpNå.html">Shop Now</a></li>
+            <li><a href="Index.html">Latest Collection</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a id="contact" href="Index.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="menu-bg" id="menu-bg"></div>
+    
+    <div class="beholder">
+        <div class="boks1"><a href="Index.html"><img id="BrigliaLogo" src="Bilder/Briglia3.png" height="52%"></a></div>  
+        <div class="boks2">
+            <h2>Inspired by the past, designed for the future</h2>
+        </div>
+        <div class="boks3">
+            <a href="Halfzipblåslider.html"><img id="halfzipblå"></a>
+        </div>
+        <div class="boks4">
+            <a href="KjøpNå.html"><img id="penskjorte"></a>
+        </div>
+        <div class="boks5">
+            <a href="KjøpNå.html"><img id="penskjortesvart"></a>
+        </div>
+        <div class="boks6">
+            <a href="KjøpNå.html"><img id="halfzipblåmørk"></a>
+        </div>
+        <div class="boks7">
+            <a href="KjøpNå.html"><img id="BlåSkjorts"></a>
+        </div>
+        <div class="boks8">
+            <a href="KjøpNå.html"><img id="blå"></a>
+        </div>
+        <div class="boks9">
+            <a href="KjøpNå.html"><img id="beige"></a>
+        </div>
+        <div class="boks10">
+            <a href="LyseblåSlider.html"><img id="lys"></a>
+        </div>
+    </div>
+            
+    <script src="js/jquery.min.js"></script>
+    <script src="js/browser.min.js"></script>
+    <script src="js/breakpoints.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/opacity.js"></script>
+</body>
+</html>

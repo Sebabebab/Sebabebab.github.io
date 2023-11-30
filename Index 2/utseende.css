@@ -1,0 +1,43 @@
+/* dette er en ekstern css fil som bestemmer utseendet på Timeplan.html */
+
+
+h1 {font-size: 60px;
+text-align: center;}
+
+/* hele tabellen */
+table {text-align:center;
+padding: 32px;px;
+}
+
+
+/* hver celle og headingcelle */
+th,td {padding: 32px;px;
+border:2px solid red;
+}
+.tom {padding: 0px;
+    border:0px solid red;}
+
+    .opp {padding: 0px;
+        border:0px solid red;}
+
+        .side {padding: 30px;
+            border:1px solid red;}
+  
+            
+
+/* forskjellige klasser*/
+.man {color: red}
+.tir {color: blue}
+.ons {color: green}
+.tor {color: pink}
+.fre {color: purple}
+
+.forum {background-color: bisque;}
+.program {background-color: black;}
+.engelsk {background-color: pink;}
+.matte {background-color: brown;}
+.yf {background-color: blue;}
+.inter {background-color: yellow;}
+.midt {background-color: aquamarine;}
+.natur {background-color: chartreuse;}
+.gym {background-color: cyan;}
